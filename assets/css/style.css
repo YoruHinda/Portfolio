@@ -1,0 +1,318 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: "8bit_wonder";
+    src: url(../fonts/8-BIT-WONDER.TTF);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+
+:root {
+    --titleColor: #00D1FF;
+    --textColor: #0095FF;
+    --buttonColor: #130047;
+    --bg1: #016fe5e1;
+    --bg2: #0073ffd7;
+    --bg3: #0095ffd7;
+    --bg4: #004b9bd3;
+    --titleFont: "8bit_wonder";
+    --textfont: "Inter", sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("../images/girl8bit.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70%;
+
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+section {
+    background: linear-gradient(var(--bg1), var(--bg2), var(--bg3));
+    width: 30vw;
+    height: 60vh;
+    padding: 30px;
+    border-radius: 50px 0 0 50px;
+    box-shadow: rgba(0, 0, 0, 0.200) 3px 3px 3px 3px;
+    float: left;
+    overflow: hidden;
+}
+
+div#me_top>h1,
+div#me_top>h2 {
+    font-family: var(--titleFont);
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.404);
+    color: var(--titleColor);
+}
+
+div#me_top>h1 {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+div#me_top>h2 {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+div#buttons>ul {
+    list-style: none;
+}
+
+div#buttons>ul>li>p {
+    display: block;
+    background-color: var(--buttonColor);
+    width: 25vw;
+    font-family: var(--textfont);
+    text-align: center;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    font-size: 1.3em;
+    color: var(--textColor);
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+div#buttons>ul>li>p:hover {
+    background-color: beige;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+div#me_top>img {
+    display: block;
+    width: 50%;
+    border-radius: 50%;
+    border-color: var(--buttonColor);
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: rgba(0, 0, 0, 0.226) 5px 5px 5px 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#mariorotate {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+div#mariorotate>img {
+    width: 100%;
+    height: auto;
+}
+
+#about {
+    display: block;
+    width: 0vw;
+    height: 60vh;
+    overflow: hidden;
+    background-color: var(--bg4);
+    box-shadow: rgba(0, 0, 0, 0.200) 3px 3px;
+    padding: 0px;
+    float: left;
+}
+
+#about>h1,
+#about>h2 {
+    font-family: var(--titleFont);
+    color: var(--titleColor);
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#about>h1 {
+    font-size: 1.4rem;
+}
+
+#about>h2 {
+    font-size: 1.2rem;
+}
+
+#about>p {
+    font-family: var(--textfont);
+    color: rgb(80, 223, 255);
+    font-size: 1rem;
+    text-align: left;
+    padding: 3%;
+}
+
+#block {
+    display: flex;
+    justify-content: center;
+    margin: 10%;
+}
+
+#block>img {
+    width: 70%;
+    height: auto;
+}
+
+#skill {
+    display: inline-block;
+    overflow: hidden;
+    width: 0vw;
+    height: 60vh;
+    background-color: var(--bg4);
+    box-shadow: rgba(0, 0, 0, 0.200) 3px 3px;
+    padding: 0px;
+}
+
+#programmingskill {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+#skill>h1 {
+    font-family: var(--titleFont);
+    color: var(--titleColor);
+    margin-bottom: 10%;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.programmingicon>img {
+    width: 100%;
+    margin-top: 10%;
+}
+
+#link {
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+}
+
+#link>img {
+    width: 100%;
+    height: auto;
+}
+
+#project {
+    display: block;
+    /* block*/
+    overflow: hidden;
+    width: 0vw;
+    height: 60vh;
+    background-color: var(--bg4);
+    box-shadow: rgba(0, 0, 0, 0.200) 3px 3px;
+    padding: 0px;
+    float: left;
+}
+
+#project>h1 {
+    font-family: var(--titleFont);
+    color: var(--titleColor);
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+#bookproject,
+#spaceproject {
+    width: 80%;
+    height: 30%;
+    margin: 10px auto 10px auto;
+}
+
+#bookproject>h1,
+#spaceproject>h1 {
+    font-family: var(--titleFont);
+    color: var(--titleColor);
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#bookproject>a,
+#spaceproject>a {
+    text-decoration: none;
+    text-align: center;
+    color: var(--textColor);
+}
+
+#bookproject>a:hover,
+#spaceproject>a:hover {
+    font-size: 1.1em;
+    color: white;
+    transition: all 0.5s;
+}
+
+#spacegif,
+#bookgif {
+    width: 100%;
+    height: 60%;
+    background-color: rgba(102, 102, 102, 0.349);
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+#pikachu {
+    display: flex;
+    justify-content: center;
+    margin: 20%;
+}
+
+#pikachu>img {
+    width: 60%;
+    height: auto;
+}
+
+#contact {
+    display: inline-block;
+    /* inline- block*/
+    overflow: hidden;
+    width: 0vw;
+    height: 60vh;
+    background-color: var(--bg4);
+    box-shadow: rgba(0, 0, 0, 0.200) 3px 3px;
+    padding: 0px;
+}
+
+#contact>h1 {
+    font-family: var(--titleFont);
+    color: var(--titleColor);
+    margin-bottom: 10%;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+#contactlist {
+    text-align: center;
+}
+
+#contactlist>a>img {
+    border-radius: 10px;
+    width: 20%;
+}
+
+#sonic {
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+}
+
+#sonic>img {
+    width: 80%;
+    height: auto;
+}

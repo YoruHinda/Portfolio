@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+@media screen and (min-width: 1024px) {
+    body {
+        background-position: center;
+    }
+
+    section {
+        height: 70vh;
+        width: 20vw;
+    }
+
+    div#buttons>ul>li>p {
+        width: 20vw;
+        margin-top: 15px;
+    }
+
+    div#mariorotate {
+        margin-top: 5%;
+    }
+
+    div#mariorotate>img {
+        width: 70%;
+    }
+
+    aside {
+        height: 65vh;
+    }
+
+    #about {
+        height: 65vh;
+    }
+
+    #about>p {
+        font-size: 1.3rem;
+    }
+
+    #block {
+        margin: 10%;
+    }
+
+    #block>img {
+        width: 30%;
+    }
+
+    #bookproject,
+    #spaceproject {
+        margin: 10px auto 5% auto;
+    }
+
+    #spacegif,
+    #bookgif {
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        height: 70%;
+    }
+
+    #pikachu {
+        margin: 5%;
+    }
+
+    #pikachu>img {
+        width: 20%;
+    }
+
+    #contactlist>a>img {
+        width: 15%;
+    }
+
+    #sonic>img {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    section {
+        height: 75vh;
+    }
+
+    div#mariorotate {
+        margin-top: 5%;
+    }
+
+    div#mariorotate>img {
+        width: 70%;
+    }
+
+    aside {
+        height: 70vh;
+    }
+
+    #about {
+        height: 70vh;
+    }
+
+    #about>p {
+        font-size: 1.2rem;
+    }
+
+    #block {
+        margin: 10%;
+    }
+
+    #block>img {
+        width: 30%;
+    }
+
+    #spacegif,
+    #bookgif {
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+        height: 60%;
+    }
+
+    #pikachu {
+        margin: 10%;
+    }
+
+    #pikachu>img {
+        width: 40%;
+    }
+
+    #contactlist>a>img {
+        width: 15%;
+    }
+
+    #sonic>img {
+        width: 80%;
+    }
+}
