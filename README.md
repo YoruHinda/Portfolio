@@ -6,7 +6,7 @@ I created my first web portfolio to demonstrate my main projects.
 
 ## How To access
 
-Link: <a href="portfolio-yoruhinda.vercel.app">Portfolio</a>
+Link: <a href="https://portfolio-yoruhinda.vercel.app" target="_blank">Portfolio</a>
 
 ## License
 
