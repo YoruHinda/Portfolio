@@ -1,26 +1,26 @@
-window.addEventListener("DOMContentLoaded", (event) => {
-    let aboutbutton = document.getElementById("aboutbutton")
-    let skillbutton = document.getElementById('skillbutton')
-    let projectbutton = document.getElementById('projectbutton')
-    let contactbutton = document.getElementById('contactbutton')
-    aboutbutton.addEventListener('click', displayabout)
-    skillbutton.addEventListener('click', displayskill)
-    projectbutton.addEventListener('click', displayproject)
-    contactbutton.addEventListener('click', displaycontact)
-});
+let aboutbutton = document.getElementById("aboutbutton")
+let skillbutton = document.getElementById('skillbutton')
+let projectbutton = document.getElementById('projectbutton')
+let contactbutton = document.getElementById('contactbutton')
+
+let aboutsection = document.getElementById('about')
+let skillsection = document.getElementById('skill')
+let projectsection = document.getElementById('project')
+let contactsection = document.getElementById('contact')
+
+aboutbutton.addEventListener('click', displayabout)
+skillbutton.addEventListener('click', displayskill)
+projectbutton.addEventListener('click', displayproject)
+contactbutton.addEventListener('click', displaycontact)
 
 function displayabout() {
-    let aboutsection = document.getElementById('about')
-    let skillsection = document.getElementById('skill')
-    let projectsection = document.getElementById('project')
-    let contactsection = document.getElementById('contact')
     if (skillsection.style.width != '0' || projectsection.style.width != '0' || contactsection.style.width != '0') {
-        skillsection.style.width = '0'
-        projectsection.style.width = '0'
-        contactsection.style.width = '0'
         skillsection.style.padding = '0'
         projectsection.style.padding = '0'
         contactsection.style.padding = '0'
+        skillsection.style.width = '0'
+        projectsection.style.width = '0'
+        contactsection.style.width = '0'
     }
     if (aboutsection.style.width == '40vw') {
         aboutsection.style.width = '0'
@@ -32,17 +32,13 @@ function displayabout() {
 }
 
 function displayskill() {
-    let aboutsection = document.getElementById('about')
-    let skillsection = document.getElementById('skill')
-    let projectsection = document.getElementById('project')
-    let contactsection = document.getElementById('contact')
     if (aboutsection.style.width != '0' || projectsection.style.width != '0' || contactsection.style.width != '0') {
-        aboutsection.style.width = '0'
-        projectsection.style.width = '0'
-        contactsection.style.width = '0'
         aboutsection.style.padding = '0'
         projectsection.style.padding = '0'
         contactsection.style.padding = '0'
+        aboutsection.style.width = '0'
+        projectsection.style.width = '0'
+        contactsection.style.width = '0'
     }
     if (skillsection.style.width == '40vw') {
         skillsection.style.width = '0'
@@ -54,10 +50,6 @@ function displayskill() {
 }
 
 function displayproject() {
-    let aboutsection = document.getElementById('about')
-    let skillsection = document.getElementById('skill')
-    let projectsection = document.getElementById('project')
-    let contactsection = document.getElementById('contact')
     if (aboutsection.style.width != '0' || skillsection.style.width != '0' || contactsection.style.width != '0') {
         aboutsection.style.width = '0'
         skillsection.style.width = '0'
@@ -76,10 +68,6 @@ function displayproject() {
 }
 
 function displaycontact() {
-    let aboutsection = document.getElementById('about')
-    let skillsection = document.getElementById('skill')
-    let projectsection = document.getElementById('project')
-    let contactsection = document.getElementById('contact')
     if (aboutsection.style.width != '0' || projectsection.style.width != '0' || skillsection.style.width != '0') {
         aboutsection.style.width = '0'
         projectsection.style.width = '0'
